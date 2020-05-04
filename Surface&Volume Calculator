@@ -7,12 +7,12 @@
 		<h1>Pick the radius</h1>
 		<p>Retrieve the volume and surface area</p>
 		<script>
-		var radius= prompt("What's the radius?");
+		var radius= prompt("What's the radius in meters?");
 		calculation_volume=(4*3.141592*radius^3)/3;
 		calcvol_final=parseInt(calculation_volume);
 		calculation_surface=(4*3.141592*radius^2);
 		calcsur_final=parseInt(calculation_surface);
-		document.write("The volume is <strong>"+calcvol_final + " cubic km</strong>"+" and the surface area is <strong>"+calcsur_final + " square km</strong>");
+		document.write("The volume is <strong>"+calcvol_final + " cubic meters</strong>"+" and the surface area is <strong>"+calcsur_final + " square meters</strong>");
 		</script>
 	</body>
 </html>

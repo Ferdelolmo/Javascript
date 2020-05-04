@@ -1,0 +1,33 @@
+<!DOCTYPE htlml>
+<html>
+	<head>
+		<title>Your weight in other planet where you are lighter</title>
+	</head>
+	<body>
+		<h1>Your weight in other planet</h1>
+		<p>In the Earth your weight is different than in Mars or Jupiter</p>
+		<script>
+		var user= prompt("What's your weight?");
+		var planet=prompt("What is the planet you want to live in?\nType Mars or Jupiter");
+		var weight=parseFloat(user);
+		var grav_earth=9.8
+		var grav_mars=3.7;
+		var grav_jupiter=24.8;
+		var weight_final;
+		if(planet=="Mars")
+		{
+			weight_final=weight*grav_mars/grav_earth;
+		}
+		else if (planet=="Jupiter")
+		{
+			weight_final=weight*grav_jupiter/grav_earth;
+		}
+		else
+		{
+			weight_final=100000000;
+		}
+		weight_final=parseInt(weight_final);
+		document.write("Your weight in <strong>"+planet+" is " +weight_final + " kg</strong>");
+		</script>
+	</body>
+</html>

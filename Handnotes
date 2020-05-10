@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Document Object Model</title>
+	</head>
+	<body>
+		<h1>Let's play with window and document</h1>
+		<script>
+		var route=window.location;
+		document.write("You're in route " + route);
+		</script>
+	</body>
+</html>
+
+When a variable is part of an object, it is called attribute or property.
+When a function is part of an object, the function can be called method.
+

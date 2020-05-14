@@ -1,0 +1,16 @@
+var d=document.getElementById("tiny drawing");
+var canvass=d.getContext("2d");
+
+drawline("pink",10,300,220,10);
+drawline("yellow",100,20,40,290);
+
+
+function drawline(colour,xinitial,yinitial,xfinal,yfinal)
+{
+	canvass.beginPath();
+	canvass.strokeStyle=colour;
+	canvass.moveTo(xinitial,yinitial);
+	canvass.lineTo(xfinal,yfinal);
+	canvass.stroke();
+	canvass.closePath();
+}

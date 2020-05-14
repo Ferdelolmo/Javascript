@@ -1,0 +1,32 @@
+var d=document.getElementById("tiny drawing");
+var canvass=d.getContext("2d");
+var lines=30;
+var l=0;
+var yi, xf;
+var mycolour="#FAA";
+
+for(l=0;)
+
+
+while(l<lines)
+{
+	yi=10*l;
+	xf=10*(1+l);
+	drawline("blue",0,yi,xf,300);
+	console.log("line "+l);
+	l=l+1;
+}
+
+
+function drawline(colour,xinitial,yinitial,xfinal,yfinal)
+{
+	canvass.beginPath();
+	canvass.strokeStyle=colour;
+	canvass.moveTo(xinitial,yinitial);
+	canvass.lineTo(xfinal,yfinal);
+	canvass.stroke();
+	canvass.closePath();
+}
+
+drawline(mycolour,1,1,1,299)
+drawline(mycolour,1,299,299,299)
